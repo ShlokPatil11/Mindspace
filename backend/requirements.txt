@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlalchemy>=2.0
+psycopg2-binary
+pgvector
+pydantic-settings
+pydantic
+email-validator
+pyjwt
+bcrypt
+pdfplumber
+python-docx
+sentence-transformers
+groq
+python-multipart
