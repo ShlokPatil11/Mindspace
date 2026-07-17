@@ -32,7 +32,8 @@
 
   --glass-blur-fallback: blur(18px);
   --glass-tint: rgba(255, 255, 255, 0.55);
-  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-border: rgba(0, 0, 0, 0.12);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 
   --transition: 0.2s ease;
   --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -223,6 +224,7 @@ input, textarea {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  margin-top: 113px;
   opacity: 1;
   transition: opacity 0.3s ease;
 }
@@ -542,7 +544,9 @@ input, textarea {
   position: absolute;
   left: 40px;
   right: 40px;
+  max-width: calc(100% - 80px);
   bottom: 24px;
+  box-sizing: border-box;
   display: flex;
   align-items: flex-end;
   gap: 10px;
@@ -593,9 +597,11 @@ input, textarea {
   -webkit-backdrop-filter: var(--glass-blur-fallback);
   background: var(--glass-tint);
   border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
 }
 
 .liquid-glass--refract {
   background: var(--glass-tint);
   border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
 }
