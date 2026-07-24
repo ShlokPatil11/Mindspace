@@ -3,6 +3,10 @@
 Upload PDF/DOCX/TXT/MD documents into named spaces, get auto-generated
 summaries, and ask questions answered from your documents' content.
 
+See [ARCHITECTURE.md](ARCHITECTURE.md) for a full code walkthrough — every
+backend module, every frontend file, the complete API reference, and
+sequence diagrams for signup, document processing, and Q&A.
+
 ## Run it
 
 1. Get a free API key at https://console.groq.com
